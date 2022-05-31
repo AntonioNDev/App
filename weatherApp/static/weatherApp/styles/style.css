@@ -10,7 +10,6 @@ img {
 /*Styling main section */
 
 .main {
-   /*border: 3px solid red;*/
    height: 99.8vh;
    display: flex;
    justify-content: center;
@@ -109,7 +108,7 @@ img {
 
 /*Styling data section */
 .data {
-   height: 99.0vh; /*media query if it's less then make it auto so it doesn't floop*/
+   height: 130vh;
    min-height: 500px;
    display: flex;
    justify-content: center;
@@ -117,7 +116,7 @@ img {
    align-items: center;
 }
 
-.data #cityData {
+.data #cityData, #tomorrowWeather {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -130,15 +129,16 @@ img {
    text-align: center;
    font-family: 'Montserrat', sans-serif;
    font-size: 15px;
+   margin-top: 30px;
    margin-bottom: 10px;
 }
 
-.data #cityName span {
+.data #cityName span{
    padding: 10px;
    font-weight: 900;
 }
 
-.data #cityData h5 {
+.data #cityData h5, #tomorrowWeather h5{
    display: inline-flex;
    color: whitesmoke;
    justify-content: center;
@@ -158,11 +158,11 @@ img {
    transition: all 400ms 0s ease-out;
 }
 
-.data #cityData span {
+.data #cityData span, #tomorrowWeather span{
    display: flex;
    border-radius: 5px;
    font-family: 'Montserrat', sans-serif;
-   background-color: red;
+   background-color: #6a994e;
    width: 100%;
    height: 100%;
    justify-content: center;
@@ -170,16 +170,16 @@ img {
    flex-direction: row;
 }
 
-.data #cityData #weather {
+.data #cityData #weather, #tomorrowWeather #weather {
    flex-direction: column-reverse;
 }
 
-.data #cityData i {
+.data #cityData i, #tomorrowWeather i{
    font-size: 1.4em;
    padding: 10px;
 }
 
-.data #cityData h5:hover {
+.data #cityData h5:hover, #tomorrowWeather h5:hover {
    transform: scale(1.1);
 }
 
@@ -207,13 +207,13 @@ img {
       font-size: 2em;
       margin-bottom: 20px;
    }
-   .data #cityData h5 {
+   .data #cityData h5, #tomorrowWeather h5 {
       width: 25%;
       height: 200px;
       margin: 10px;
       font-size: 1.6em;
    }
-   .data #cityData #weather img{
+   .data #cityData #weather img, #tomorrowWeather #weather img{
       width: 30%;
       height: auto;
    }
@@ -234,7 +234,7 @@ img {
    #image {
       width: 50%;
    }
-   .data #cityData h5 {
+   .data #cityData h5, #tomorrowWeather h5 {
       font-size: 1.1em;
    }
 
@@ -272,7 +272,7 @@ img {
       width: 85%;
       margin: 5%;
    }
-   .data #cityData h5 {
+   .data #cityData h5, #tomorrowWeather h5{
       font-size: 1em;
    }
  }

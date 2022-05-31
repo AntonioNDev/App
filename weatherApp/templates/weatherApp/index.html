@@ -7,18 +7,16 @@
          <h3>Weather today in: <span>{{ city }}/{{ country }}</span></h3>
       </div>
       <div id="cityData">
-         <!--All the data for the city weather...-->
+         <!--CURRENT WEATHER INFO-->
          <h5>Weather <span id="weather"><img src={{ conditionICO }} alt="{{ condition }}"> {{ condition }} </span></h5>
          <h5>Pressure <span>{{ pressure }}mb</span></h5>
 
-         <!--If temperature is higher than 30 then add fire icon else if it's less than 20 then add clouds 
-            icon if it's less than 10 then add clouds&wind and less than 0 freezing icon-->
          {% if temp_celsius >= 28 and temp_celsius < 50 %}
-            <h5>Temperature <span><i class="fa-solid fa-temperature-high" style="color: #640d14;"></i>{{ temp_celsius }}°C</span></h5>
+            <h5>Temperature <span><i class="fa-solid fa-temperature-high" style="color: #650d1c;"></i>{{ temp_celsius }}°C</span></h5>
          {% elif temp_celsius >= 10 and temp_celsius < 28 %}
-            <h5>Temperature <span><i class="fa-solid fa-temperature-three-quarters" style="color: #a2444a;"></i>{{ temp_celsius }}°C</span></h5>
+            <h5>Temperature <span><i class="fa-solid fa-temperature-three-quarters" style="color: #ca2a42;"></i>{{ temp_celsius }}°C</span></h5>
          {% elif temp_celsius > 0 and temp_celsius < 10 %}
-            <h5>Temperature <span><i class="fa-solid fa-temperature-quarter" style="color: #f2fc3a;"></i>{{ temp_celsius }}°C</span></h5>
+            <h5>Temperature <span><i class="fa-solid fa-temperature-quarter" style="color: #d76272;"></i>{{ temp_celsius }}°C</span></h5>
          {% elif temp_celsius <= 0 %}
             <h5>Temperature <span><i class="fa-solid fa-temperature-low" style="color: #3da8e3;"></i>{{ temp_celsius }}°C</span></h5>
          {% endif %}
@@ -26,7 +24,6 @@
          <h5>Humidity <span> <i class="fa-solid fa-droplet fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0; color: #25ced1;"></i>{{ humidity }}% </span></h5>
          <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }}kph</span></h5>
 
-         <!--if there are clouds (1) then change the icon to cloud, else change it to sun-->
          {% if cloud == 1 %}
             <h5>Clouds <span><i class="fa-solid fa-cloud" style="color: #25ced1;"></i>Cloudy</span></h5>
          {% else %}
@@ -45,7 +42,6 @@
             <h5>UV <span>{{ UV }}</span></h5>
          {% endif %}
 
-         <!--If temp is greater than 20C then add fire icon if it's less than 10 then add clouds if it's less than 0 then add freezing icon-->
          <h5>Max temperature <span>{{ maxtemp_celsius }}°C</span></h5>
          <h5>Min temperature <span>{{ mintemp_celsius }}°C</span></h5>
 
@@ -65,9 +61,45 @@
          
          <h5>Last updated <span>{{ last_updated }}</span></h5>
 
-         <!--Weather for tomorrow-->
-         
       </div>
+      <!--WEATHER FOR TOMORROW-->
+      <div id="cityName">
+         <h3>Weather tomorrow in: <span>{{ city }}/{{ country }}</span></h3>
+      </div>
+      <div id="tomorrowWeather">
+         <h5>Weather <span id="weather"><img src={{ condition_t_ICO }} alt="{{ condition_t }}"> {{ condition_t }} </span></h5>
+         <h5>Max temperature <span>{{ max_temp_t }}°C</span></h5>
+         <h5>Min temperature <span>{{ min_temp_t }}°C</span></h5>
+         
+         {% if chance_of_rain_t > 50 %}
+            <h5>Chances of rain <span><i class="fa-solid fa-cloud-showers-water" style="color: #25ced1;"></i>{{ chance_of_rain_t }}%</span></h5>
+         {% elif chance_of_rain_t >= 30 and chance_of_rain_t <= 50 %}
+            <h5>Chances of rain <span><i class="fa-solid fa-umbrella" style="color: #43aa8b;"></i>{{ chance_of_rain_t }}%</span></h5>
+         {% else %}
+            <h5>Chances of rain <span>{{ chance_of_rain_t }}%</span></h5>
+         {% endif %}
+         
+         <h5>Max Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ max_wind }}kph</span></h5>
+
+         {% if UV_t >= 3 and UV_t <= 5 %}
+            <h5>UV <span>{{ UV }}</span></h5>
+         {% elif UV_t >= 6 and UV_t <= 7 %}
+            <h5>UV <span><i class="fa-solid fa-circle-info fa-beat-fade" style="color: #ffba08;"></i>{{ UV_t }}</span></h5>
+         {% elif UV_t >= 8 and UV_t <= 10 %}
+            <h5>UV <span><i class="fa-solid fa-triangle-exclamation fa-fade" style="color: #824b03;"></i> {{ UV_t }}</span></h5>
+         {% elif UV_t > 11  %}
+            <h5>UV <span><i class="fa-solid fa-skull-crossbones fa-fade" style="color: #dc2f02;"></i>{{ UV_t }}</span></h5>   
+         {% else %}
+            <h5>UV <span>{{ UV_t }}</span></h5>
+         {% endif %}
+
+         <h5>Sunrise/Sunset <span>{{sunrise_t}} / {{sunset_t}}</span></h5>
+         <h5>Moonrise/Moonset <span>{{moonrise_t}} / {{moonset_t}}</span></h5>
+         <h5>Moon phase <span>{{moon_phase_t}}</span></h5>
+         <h5>Date <span>{{date}}</span></h5>
+
+      </div>
+
    </section>
 
 {% endblock %}
