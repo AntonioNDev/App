@@ -42,29 +42,28 @@ def index(request):
                "wind_kph": response['current']['wind_kph'],
                "cloud": response['current']['cloud'],
                "UV": response['current']['uv'],
-               "maxtemp_celsius": response['forecast']['forecastday'][1]['day']['maxtemp_c'],
-               "mintemp_celsius": response['forecast']['forecastday'][1]['day']['mintemp_c'],
-               "chance_of_rain": response['forecast']['forecastday'][1]['day']['daily_chance_of_rain'],
+               "maxtemp_celsius": response['forecast']['forecastday'][0]['day']['maxtemp_c'],
+               "mintemp_celsius": response['forecast']['forecastday'][0]['day']['mintemp_c'],
+               "chance_of_rain": response['forecast']['forecastday'][0]['day']['daily_chance_of_rain'],
                "is_day": response['current']['is_day'],
                "last_updated": response['location']['localtime'],
                "pressure": response['current']['pressure_mb'],
 
-               "alerts": response['alerts']['alert'],
 
                #Forecast for tomorrow#
-               "date": response['forecast']['forecastday'][2]['date'],
-               "max_temp_t": response['forecast']['forecastday'][2]['day']['maxtemp_c'],
-               "min_temp_t": response['forecast']['forecastday'][2]['day']['mintemo_c'],
-               "chance_of_rain_t": response['forecast']['forecastday'][2]['day']['daily_chance_of_rain'],
-               "condition_t": response['forecast']['forecastday'][2]['day']['condition']['text'],
-               "condition_t_ICO": response['forecast']['forecastday'][2]['day']['condition']['icon'],
-               "UV_t": response['forecast']['forecastday'][2]['day']['uv'],
-               "sunrise_t": response['forecast']['forecastday'][2]['astro']['sunrise'],
-               "sunset_t": response['forecast']['forecastday'][2]['astro']['sunset'],
-               "moonrise_t": response['forecast']['forecastday'][2]['astro']['moonrise'],
-               "moonset_t": response['forecast']['forecastday'][2]['astro']['moonset'],
-               "moon_phase_t": response['forecast']['forecastday'][2]['astro']['moon_phase'],
-               "max_wind": response['forecast']['forecastday'][2]['day']['maxwind_kph']
+               "date": response['forecast']['forecastday'][1]['date'],
+               "max_temp_t": response['forecast']['forecastday'][1]['day']['maxtemp_c'],
+               "min_temp_t": response['forecast']['forecastday'][1]['day']['mintemp_c'],
+               "chance_of_rain_t": response['forecast']['forecastday'][1]['day']['daily_chance_of_rain'],
+               "condition_t": response['forecast']['forecastday'][1]['day']['condition']['text'],
+               "condition_t_ICO": response['forecast']['forecastday'][1]['day']['condition']['icon'],
+               "UV_t": response['forecast']['forecastday'][1]['day']['uv'],
+               "sunrise_t": response['forecast']['forecastday'][1]['astro']['sunrise'],
+               "sunset_t": response['forecast']['forecastday'][1]['astro']['sunset'],
+               "moonrise_t": response['forecast']['forecastday'][1]['astro']['moonrise'],
+               "moonset_t": response['forecast']['forecastday'][1]['astro']['moonset'],
+               "moon_phase_t": response['forecast']['forecastday'][1]['astro']['moon_phase'],
+               "max_wind": response['forecast']['forecastday'][1]['day']['maxwind_kph']
             })
 
          else:
