@@ -22,14 +22,36 @@
          {% endif %}
          
          <h5>Humidity <span><i class="fa-solid fa-droplet fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0; color: #25ced1;"></i>{{ humidity }}% </span></h5>
-         <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }}kph <i class="fa-solid fa-arrow-down-long">S</i></span></h5>
+         
 
+         <!--Rotate the arrow to the side of wind_dir-->
+         {% if wind_dir == 'N' %}
+            <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }} km/h <i class="fa-solid fa-arrow-down-long" style="transform: rotate(0deg);"></i>{{wind_dir}}</span></h5>
+         {% elif wind__dir == 'NE' %}
+            <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }} km/h <i class="fa-solid fa-arrow-down-long" style="transform: rotate(45deg);"></i>{{wind_dir}}</span></h5>
+         {% elif wind_dir == 'NW' %}
+            <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }} km/h <i class="fa-solid fa-arrow-down-long" style="transform: rotate(317deg);"></i>{{wind_dir}}</span></h5>
+         {% elif wind_dir == 'E' %}
+            <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }} km/h <i class="fa-solid fa-arrow-down-long" style="transform: rotate(90deg);"></i>{{wind_dir}}</span></h5>
+         {% elif wind_dir == 'W' %}
+            <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }} km/h <i class="fa-solid fa-arrow-down-long" style="transform: rotate(270deg);"></i>{{wind_dir}}</span></h5>
+         {% elif wind_dir == 'S' %}
+            <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }} km/h <i class="fa-solid fa-arrow-down-long" style="transform: rotate(180deg);"></i>{{wind_dir}}</span></h5>
+         {% elif wind_dir == 'SE' %}
+            <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }} km/h <i class="fa-solid fa-arrow-down-long" style="transform: rotate(135deg);"></i>{{wind_dir}}</span></h5>
+         {% elif wind_dir == 'SW' %}
+            <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }} km/h <i class="fa-solid fa-arrow-down-long" style="transform: rotate(225deg);"></i>{{wind_dir}}</span></h5>
+         {% endif %}
+
+         <!--If cloud is 1 then there are clouds, else clear sky.-->
          {% if cloud == 1 %}
             <h5>Clouds <span><i class="fa-solid fa-cloud" style="color: #25ced1;"></i>Cloudy</span></h5>
          {% else %}
             <h5>Clouds <span><i class="fa-solid fa-sun fa-spin" style="color: #ffee32;"></i>Clear sky</span></h5> 
          {% endif %}
             
+
+         <!--Check the UV-->
          {% if UV >= 3 and UV <= 5 %}
             <h5>UV <span>{{ UV }}</span></h5>
          {% elif UV >= 6 and UV <= 7 %}
@@ -60,7 +82,6 @@
          {% endif %}
          
          <h5>Last updated <span>{{ last_updated }}</span></h5>
-         <h5 id="airQuality">Air quality <span>CO: {{co}} | NO2: {{no2}} | O3: {{o3}} | SO2: {{so2}} | PM2: {{pm2}} | PM10: {{pm10}}</span></h5>
 
       </div>
 
@@ -83,7 +104,7 @@
             <h5>Chances of rain <span>{{ chance_of_rain_t }}%</span></h5>
          {% endif %}
          
-         <h5>Max Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ max_wind }}kph</span></h5>
+         <h5>Max Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ max_wind }} km/h</span></h5>
          <h5>Average visibility <span>{{avg_visibility_t}}km</span></h5>
 
          {% if UV_t >= 3 and UV_t <= 5 %}
@@ -92,7 +113,7 @@
             <h5>UV <span><i class="fa-solid fa-circle-info fa-beat-fade" style="color: #ffba08;"></i>{{ UV_t }}</span></h5>
          {% elif UV_t >= 8 and UV_t <= 10 %}
             <h5>UV <span><i class="fa-solid fa-triangle-exclamation fa-fade" style="color: #824b03;"></i> {{ UV_t }}</span></h5>
-         {% elif UV_t > 11  %}
+         {% elif UV_t >= 11  %}
             <h5>UV <span><i class="fa-solid fa-skull-crossbones fa-fade" style="color: #dc2f02;"></i>{{ UV_t }}</span></h5>   
          {% else %}
             <h5>UV <span>{{ UV_t }}</span></h5>

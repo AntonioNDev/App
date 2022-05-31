@@ -108,7 +108,7 @@ img {
 
 /*Styling data section */
 .data {
-   height: 130vh;
+   height: 150vh;
    min-height: 500px;
    display: flex;
    justify-content: center;
@@ -179,9 +179,6 @@ img {
    padding: 10px;
 }
 
-.data #cityData #airQuality {
-   width: 100%;
-}
 
 .data #cityData h5:hover, #tomorrowWeather h5:hover {
    transform: scale(1.1);
@@ -224,7 +221,7 @@ img {
 }
 
 /*Medium screen*/
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1095px) {
    #form h1 {
       margin-left: 13%
    }
@@ -237,6 +234,9 @@ img {
    }
    #image {
       width: 50%;
+   }
+   .data {
+      height: auto;
    }
    .data #cityData h5, #tomorrowWeather h5 {
       font-size: 1.1em;
@@ -268,7 +268,7 @@ img {
 }
 
 /*Mobile screen*/
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 600px) {
    #image {
       display: none;
    }
