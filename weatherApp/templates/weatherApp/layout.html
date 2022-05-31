@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://kit.fontawesome.com/e8303bef12.js" crossorigin="anonymous"></script>
+      <title>Weather App</title>
+      <link rel="shortcut icon" href="{% static 'weatherApp/images/fav.ico' %}" type="image/x-icon">
+      <link rel="stylesheet" href="{% static 'weatherApp/style.css' %}">
+   </head>
+   <body>
+      <section class="main">
+         <!--form div-->
+         <div id="form">
+            <h1 for="">Write city name: </h1>
+            <form action="{% url 'weather:index' %}" method="post">
+               {% csrf_token %}
+               {{ form }}
+               <br>
+               <button type="submit">Get</button>
+            </form>
+
+            <!--Errors div-->
+            <div id="error">
+               <h3>{{ error }}</h6>
+            </div>
+         </div>
+
+         <!--Image div-->
+         <div id="image">
+            <img src="{% static 'weatherApp/images/img1.png' %}">
+         </div>
+
+      </section>
+
+      <!--Data section -->
+      
+      {% block data %}
+      
+      {% endblock %}
+   </body>
+</html>
