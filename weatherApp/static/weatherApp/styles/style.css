@@ -179,6 +179,10 @@ img {
    padding: 10px;
 }
 
+.data #cityData #airQuality {
+   width: 100%;
+}
+
 .data #cityData h5:hover, #tomorrowWeather h5:hover {
    transform: scale(1.1);
 }

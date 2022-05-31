@@ -21,8 +21,8 @@
             <h5>Temperature <span><i class="fa-solid fa-temperature-low" style="color: #3da8e3;"></i>{{ temp_celsius }}°C</span></h5>
          {% endif %}
          
-         <h5>Humidity <span> <i class="fa-solid fa-droplet fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0; color: #25ced1;"></i>{{ humidity }}% </span></h5>
-         <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }}kph</span></h5>
+         <h5>Humidity <span><i class="fa-solid fa-droplet fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0; color: #25ced1;"></i>{{ humidity }}% </span></h5>
+         <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }}kph <i class="fa-solid fa-arrow-down-long">S</i></span></h5>
 
          {% if cloud == 1 %}
             <h5>Clouds <span><i class="fa-solid fa-cloud" style="color: #25ced1;"></i>Cloudy</span></h5>
@@ -60,8 +60,12 @@
          {% endif %}
          
          <h5>Last updated <span>{{ last_updated }}</span></h5>
+         <h5 id="airQuality">Air quality <span>CO: {{co}} | NO2: {{no2}} | O3: {{o3}} | SO2: {{so2}} | PM2: {{pm2}} | PM10: {{pm10}}</span></h5>
 
       </div>
+
+
+
       <!--WEATHER FOR TOMORROW-->
       <div id="cityName">
          <h3>Weather tomorrow in: <span>{{ city }}/{{ country }}</span></h3>
@@ -80,6 +84,7 @@
          {% endif %}
          
          <h5>Max Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ max_wind }}kph</span></h5>
+         <h5>Average visibility <span>{{avg_visibility_t}}km</span></h5>
 
          {% if UV_t >= 3 and UV_t <= 5 %}
             <h5>UV <span>{{ UV }}</span></h5>
@@ -92,6 +97,8 @@
          {% else %}
             <h5>UV <span>{{ UV_t }}</span></h5>
          {% endif %}
+
+         <h5>Average humidity <span><i class="fa-solid fa-droplet fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0; color: #25ced1;"></i>{{avg_humidity_t}}%</span></h5>
 
          <h5>Sunrise/Sunset <span>{{sunrise_t}} / {{sunset_t}}</span></h5>
          <h5>Moonrise/Moonset <span>{{moonrise_t}} / {{moonset_t}}</span></h5>

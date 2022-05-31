@@ -9,7 +9,7 @@ class cityNameForm(forms.Form):
 
 def fetchData(cityName):
    try:
-      response = requests.get(f"https://api.weatherapi.com/v1/forecast.json?key=d544248570e94c51a67211516211806&q={cityName}&days=2&aqi=no&alerts=no")
+      response = requests.get(f"https://api.weatherapi.com/v1/forecast.json?key=d544248570e94c51a67211516211806&q={cityName}&days=2&aqi=yes&alerts=yes")
 
       if response.status_code != 400:
          return response.json()
@@ -48,7 +48,16 @@ def index(request):
                "is_day": response['current']['is_day'],
                "last_updated": response['location']['localtime'],
                "pressure": response['current']['pressure_mb'],
+               
+               #Air quality
+               "co": int(response['current']['air_quality']['co']),
+               "no2": int(response['current']['air_quality']['no2']),
+               "o3": int(response['current']['air_quality']['o3']),
+               "so2": int(response['current']['air_quality']['so2']),
+               "pm2": int(response['current']['air_quality']['pm2_5']),
+               "pm10": int(response['current']['air_quality']['pm10']),
 
+               "alerts": response['alerts']['alert'],
 
                #Forecast for tomorrow#
                "date": response['forecast']['forecastday'][1]['date'],
@@ -63,7 +72,9 @@ def index(request):
                "moonrise_t": response['forecast']['forecastday'][1]['astro']['moonrise'],
                "moonset_t": response['forecast']['forecastday'][1]['astro']['moonset'],
                "moon_phase_t": response['forecast']['forecastday'][1]['astro']['moon_phase'],
-               "max_wind": response['forecast']['forecastday'][1]['day']['maxwind_kph']
+               "max_wind": response['forecast']['forecastday'][1]['day']['maxwind_kph'],
+               "avg_visibility_t": response['forecast']['forecastday'][1]['day']['avgvis_km'],
+               "avg_humidity_t": response['forecast']['forecastday'][1]['day']['avghumidity']
             })
 
          else:
