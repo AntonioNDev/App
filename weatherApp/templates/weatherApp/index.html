@@ -24,7 +24,7 @@
          {% endif %}
          
          <h5>Humidity <span> <i class="fa-solid fa-droplet fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0; color: #25ced1;"></i>{{ humidity }}% </span></h5>
-         <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_mph }}mph</span></h5>
+         <h5>Wind <span><i class="fa-solid fa-wind" style="color: #297f90"></i>{{ wind_kph }}kph</span></h5>
 
          <!--if there are clouds (1) then change the icon to cloud, else change it to sun-->
          {% if cloud == 1 %}
@@ -43,7 +43,6 @@
             <h5>UV <span><i class="fa-solid fa-skull-crossbones fa-fade" style="color: #dc2f02;"></i>{{ UV }}</span></h5>   
          {% else %}
             <h5>UV <span>{{ UV }}</span></h5>
-
          {% endif %}
 
          <!--If temp is greater than 20C then add fire icon if it's less than 10 then add clouds if it's less than 0 then add freezing icon-->
@@ -65,6 +64,12 @@
          {% endif %}
          
          <h5>Last updated <span>{{ last_updated }}</span></h5>
+
+         <!--Weather for tomorrow-->
+         <div id="cityName">
+            <h3>Weather tomorrow in: <span>{{ city }}/{{ country }}</span></h3>
+         </div>
+         
       </div>
    </section>
 

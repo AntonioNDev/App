@@ -6,30 +6,29 @@
         "lat": 51.52,
         "lon": -0.11,
         "tz_id": "Europe/London",
-        "localtime_epoch": 1653958495,
-        "localtime": "2022-05-31 1:54"
+        "localtime_epoch": 1654003705,
+        "localtime": "2022-05-31 14:28"
     },
     "current": {
-        "last_updated": "2022-05-31 01:45",
-        "temp_c": 10.0,
-        "is_day": 0,
+        "last_updated": "2022-05-31 14:15",
+        "temp_c": 14.0,
+        "is_day": 1,
         "condition": {
-            "text": "Light rain",
-            "icon": "//cdn.weatherapi.com/weather/64x64/night/296.png"
+            "text": "Moderate rain",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/302.png"
         },
-        "wind_mph": 6.9,
+        "wind_kph": 13.0,
         "pressure_mb": 1012.0,
-        "humidity": 94,
-        "cloud": 75,
-        "feelslike_c": 9.2,
-        "uv": 1.0,
+        "humidity": 77,
+        "cloud": 50,
+        "uv": 3.0,
         "air_quality": {
-            "co": 208.60000610351562,
-            "no2": 19.399999618530273,
-            "o3": 60.79999923706055,
-            "so2": 9.399999618530273,
-            "pm2_5": 5.5,
-            "pm10": 8.300000190734863,
+            "co": 191.89999389648438,
+            "no2": 7.0,
+            "o3": 73.0,
+            "so2": 4.400000095367432,
+            "pm2_5": 1.100000023841858,
+            "pm10": 1.2999999523162842,
             "us-epa-index": 1,
             "gb-defra-index": 1
         }
@@ -40,22 +39,26 @@
                 "date": "2022-05-31",
                 "date_epoch": 1653955200,
                 "day": {
-                    "maxtemp_c": 15.1,
-                    "mintemp_c": 8.5,
+                    "maxtemp_c": 14.6,
+                    "mintemp_c": 8.3,
+                    "maxwind_kph": 16.6,
                     "daily_will_it_rain": 1,
-                    "daily_chance_of_rain": 91,
+                    "daily_chance_of_rain": 96,
                     "daily_will_it_snow": 0,
                     "daily_chance_of_snow": 0,
                     "condition": {
-                        "text": "Moderate rain"
-                    }
+                        "text": "Moderate rain",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/302.png"
+                    },
+                    "uv": 4.0
                 },
                 "astro": {
                     "sunrise": "04:50 AM",
                     "sunset": "09:07 PM",
                     "moonrise": "05:07 AM",
                     "moonset": "10:37 PM",
-                    "moon_phase": "New Moon"
+                    "moon_phase": "New Moon",
+                    "moon_illumination": "0"
                 },
                 "hour": [
                     {
@@ -136,22 +139,26 @@
                 "date": "2022-06-01",
                 "date_epoch": 1654041600,
                 "day": {
-                    "maxtemp_c": 17.6,
-                    "mintemp_c": 7.3,
+                    "maxtemp_c": 17.4,
+                    "mintemp_c": 7.5,
+                    "maxwind_kph": 14.8,
                     "daily_will_it_rain": 1,
-                    "daily_chance_of_rain": 88,
+                    "daily_chance_of_rain": 84,
                     "daily_will_it_snow": 0,
                     "daily_chance_of_snow": 0,
                     "condition": {
-                        "text": "Patchy rain possible"
-                    }
+                        "text": "Patchy rain possible",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png"
+                    },
+                    "uv": 5.0
                 },
                 "astro": {
                     "sunrise": "04:49 AM",
                     "sunset": "09:08 PM",
                     "moonrise": "05:45 AM",
                     "moonset": "11:34 PM",
-                    "moon_phase": "Waxing Crescent"
+                    "moon_phase": "Waxing Crescent",
+                    "moon_illumination": "9"
                 },
                 "hour": [
                     {

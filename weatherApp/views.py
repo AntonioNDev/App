@@ -31,7 +31,7 @@ def index(request):
          if response != False:
 
             return render(request, "weatherApp/index.html", {
-               #Current weather info#
+               #Current weather info
                "form": cityNameForm(),
                "city": response['location']['name'],
                "country": response['location']['country'],
@@ -39,7 +39,7 @@ def index(request):
                "conditionICO": response['current']['condition']['icon'],
                "temp_celsius": int(response['current']['temp_c']),
                "humidity": response['current']['humidity'],
-               "wind_mph": response['current']['wind_mph'],
+               "wind_kph": response['current']['wind_kph'],
                "cloud": response['current']['cloud'],
                "UV": response['current']['uv'],
                "maxtemp_celsius": response['forecast']['forecastday'][1]['day']['maxtemp_c'],
@@ -47,10 +47,24 @@ def index(request):
                "chance_of_rain": response['forecast']['forecastday'][1]['day']['daily_chance_of_rain'],
                "is_day": response['current']['is_day'],
                "last_updated": response['location']['localtime'],
-               "pressure": response['current']['pressure_mb']
+               "pressure": response['current']['pressure_mb'],
+
+               "alerts": response['alerts']['alert'],
 
                #Forecast for tomorrow#
-
+               "date": response['forecast']['forecastday'][2]['date'],
+               "max_temp_t": response['forecast']['forecastday'][2]['day']['maxtemp_c'],
+               "min_temp_t": response['forecast']['forecastday'][2]['day']['mintemo_c'],
+               "chance_of_rain_t": response['forecast']['forecastday'][2]['day']['daily_chance_of_rain'],
+               "condition_t": response['forecast']['forecastday'][2]['day']['condition']['text'],
+               "condition_t_ICO": response['forecast']['forecastday'][2]['day']['condition']['icon'],
+               "UV_t": response['forecast']['forecastday'][2]['day']['uv'],
+               "sunrise_t": response['forecast']['forecastday'][2]['astro']['sunrise'],
+               "sunset_t": response['forecast']['forecastday'][2]['astro']['sunset'],
+               "moonrise_t": response['forecast']['forecastday'][2]['astro']['moonrise'],
+               "moonset_t": response['forecast']['forecastday'][2]['astro']['moonset'],
+               "moon_phase_t": response['forecast']['forecastday'][2]['astro']['moon_phase'],
+               "max_wind": response['forecast']['forecastday'][2]['day']['maxwind_kph']
             })
 
          else:
