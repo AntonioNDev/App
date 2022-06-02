@@ -339,5 +339,8 @@ a {
    .data #cityData h5, #tomorrowWeather h5{
       font-size: 1em;
    }
+   .footer #links #credits {
+      margin-top: 10px;
+   }
  }
 
