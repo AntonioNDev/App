@@ -9,7 +9,7 @@
       <script src="https://kit.fontawesome.com/e8303bef12.js" crossorigin="anonymous"></script>
       <title>Weather App</title>
       <link rel="shortcut icon" href="{% static 'weatherApp/images/fav.ico' %}" type="image/x-icon">
-      <link rel="stylesheet" href="{% static 'weatherApp/styles/style.css' %}">
+      <link rel="stylesheet" href="{% static 'weatherApp/style.css' %}">
    </head>
    <body>
       <section class="main">
@@ -41,5 +41,17 @@
       {% block data %}
       
       {% endblock %}
+
+      <footer class="footer">
+         <div id="links">
+            <h5>Social media: </h5>
+            <ul>
+               <li><a href="https://github.com/AntonioNDev" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>GitHub</a></li>
+               <li><a href="https://www.linkedin.com/in/antonio-n-12362b209/" target="_blank" rel="noopener noreferrer">Linked<i class="fa-brands fa-linkedin"></i></a></li>
+               <li><a href="https://www.weatherapi.com/" target="_blank" rel="noopener noreferrer">API</a></li>
+            </ul>
+            <span id="credits">© AntonioNDev. All rights reserved.</span>
+         </div>
+      </footer>
    </body>
 </html>
