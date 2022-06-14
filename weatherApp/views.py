@@ -51,6 +51,7 @@ def index(request):
                "wind_dir": response['current']['wind_dir'],
 
                "alerts": response['alerts']['alert'],
+               "alerts_len": len(response['alerts']['alert']),
 
                #Forecast for tomorrow#
                "date": response['forecast']['forecastday'][1]['date'],
