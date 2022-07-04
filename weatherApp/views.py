@@ -5,11 +5,11 @@ import requests
 
 
 class cityNameForm(forms.Form):
-   cityName = forms.CharField(label="", min_length=5, widget=forms.TextInput(attrs={'placeholder': 'ex: "London" '}))
+   cityName = forms.CharField(label="", min_length=5, widget=forms.TextInput(attrs={'placeholder': 'eg: "London" '}))
 
 def fetchData(cityName):
    try:
-      response = requests.get(f"https://api.weatherapi.com/v1/forecast.json?key=d544248570e94c51a67211516211806&q={cityName}&days=2&aqi=no&alerts=yes")
+      response = requests.get(f"https://api.weatherapi.com/v1/forecast.json?key=d544248570e94c51a67211516211806&q={cityName}&days=3&aqi=yes&alerts=yes")
 
       if response.status_code != 400:
          return response.json()
