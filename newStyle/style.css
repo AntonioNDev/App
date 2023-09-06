@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+   font-family: 'Raleway', sans-serif;
+}
+
+.weatherDataCard, .weatherForecast {
+   border: 1px solid red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.weatherForecast {
+   flex-direction: column;
+}
+
+#dataCard {
+   position: relative;
+   border: 1px solid blue;
+   display: block;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin: 1%;
+   padding: 2%;
+   width: 25%;
+   flex-wrap: wrap;
+}
+
+.weatherDaily, .Hourly {
+   display: flex;
+   font-size: 0.65em;
+   border: 1px solid pink;
+   width: 50%;
+   justify-content: space-around;
+}
+.weatherDaily > #forecastDays, #forecastHourly {
+   border: 1px solid brown;
+   text-align: center;
+   padding: 1.5%;
+}

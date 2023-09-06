@@ -1,0 +1,1015 @@
+{
+    "location": {
+        "name": "Kumanovo",
+        "region": "Kumanovo",
+        "country": "Macedonia",
+        "lat": 42.13,
+        "lon": 21.71,
+        "tz_id": "Europe/Skopje",
+        "localtime_epoch": 1676810515,
+        "localtime": "2023-02-19 13:41"
+    },
+    "current": {
+        "last_updated": "2023-02-19 13:30",
+        "temp_c": 18.0,
+        "is_day": 1,
+        "condition": {
+            "text": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+        },
+        "wind_kph": 3.6,
+        "wind_dir": "ESE",
+        "pressure_mb": 1018.0,
+        "humidity": 34,
+        "cloud": 0,
+        "vis_km": 10.0,
+        "uv": 5.0,
+        "air_quality": {
+            "co": 260.3999938964844,
+            "no2": 2.5999999046325684,
+            "o3": 97.30000305175781,
+            "so2": 4.300000190734863,
+            "pm2_5": 23.5,
+            "pm10": 25.5,
+            "us-epa-index": 2,
+            "gb-defra-index": 2
+        }
+    },
+    "forecast": {
+        "forecastday": [
+            {
+                "date": "2023-02-19",
+                "day": {
+                    "maxtemp_c": 15.9,
+                    "mintemp_c": 5.2,
+                    "maxwind_kph": 11.9,
+                    "totalsnow_cm": 0.0,
+                    "avgvis_km": 10.0,
+                    "avghumidity": 60.0,
+                    "daily_chance_of_rain": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Sunny",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                    },
+                    "uv": 4.0
+                },
+                "astro": {
+                    "sunrise": "06:24 AM",
+                    "sunset": "05:10 PM",
+                    "moonrise": "06:16 AM",
+                    "moonset": "04:03 PM",
+                    "moon_phase": "Waning Crescent",
+                    "moon_illumination": "3",
+                    "is_moon_up": 0,
+                    "is_sun_up": 0
+                },
+                "hour": [
+                    {
+                        "time": "2023-02-19 00:00",
+                        "temp_c": 7.8,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 1.1,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 01:00",
+                        "temp_c": 7.4,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 0.7,
+                        "wind_dir": "NW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 02:00",
+                        "temp_c": 7.1,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 3.6,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 03:00",
+                        "temp_c": 6.5,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 7.6,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 04:00",
+                        "temp_c": 5.8,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 8.3,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 05:00",
+                        "temp_c": 5.5,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 8.3,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 06:00",
+                        "temp_c": 5.2,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 8.3,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 07:00",
+                        "temp_c": 5.3,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 7.6,
+                        "wind_dir": "NW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 08:00",
+                        "temp_c": 7.4,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 5.8,
+                        "wind_dir": "NW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 09:00",
+                        "temp_c": 9.6,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 4.0,
+                        "wind_dir": "NW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 10:00",
+                        "temp_c": 11.5,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 1.4,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 11:00",
+                        "temp_c": 13.7,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 1.1,
+                        "wind_dir": "SE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 12:00",
+                        "temp_c": 15.5,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 3.6,
+                        "wind_dir": "SSE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 13:00",
+                        "temp_c": 15.5,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 4.7,
+                        "wind_dir": "SSE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 14:00",
+                        "temp_c": 15.9,
+                        "condition": {
+                            "text": "Overcast",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png"
+                        },
+                        "wind_kph": 4.3,
+                        "wind_dir": "SE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 15:00",
+                        "temp_c": 15.8,
+                        "condition": {
+                            "text": "Overcast",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png"
+                        },
+                        "wind_kph": 4.7,
+                        "wind_dir": "SE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 16:00",
+                        "temp_c": 15.4,
+                        "condition": {
+                            "text": "Cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/119.png"
+                        },
+                        "wind_kph": 4.0,
+                        "wind_dir": "E",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 17:00",
+                        "temp_c": 13.7,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 7.6,
+                        "wind_dir": "NNE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 18:00",
+                        "temp_c": 11.8,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 10.1,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 19:00",
+                        "temp_c": 10.9,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 11.5,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 20:00",
+                        "temp_c": 10.3,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 10.8,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 21:00",
+                        "temp_c": 9.6,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 11.2,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 22:00",
+                        "temp_c": 9.0,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 11.5,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-19 23:00",
+                        "temp_c": 8.6,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 11.2,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    }
+                ]
+            },
+            {
+                "date": "2023-02-20",
+                "day": {
+                    "maxtemp_c": 14.1,
+                    "mintemp_c": 5.0,
+                    "maxwind_kph": 18.4,
+                    "totalsnow_cm": 0.0,
+                    "avgvis_km": 10.0,
+                    "avghumidity": 66.0,
+                    "daily_chance_of_rain": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Partly cloudy",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                    },
+                    "uv": 3.0
+                },
+                "astro": {
+                    "sunrise": "06:23 AM",
+                    "sunset": "05:12 PM",
+                    "moonrise": "06:50 AM",
+                    "moonset": "05:26 PM",
+                    "moon_phase": "New Moon",
+                    "moon_illumination": "0",
+                    "is_moon_up": 0,
+                    "is_sun_up": 0
+                },
+                "hour": [
+                    {
+                        "time": "2023-02-20 00:00",
+                        "temp_c": 7.9,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "wind_kph": 10.1,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 01:00",
+                        "temp_c": 7.6,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "wind_kph": 9.0,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 02:00",
+                        "temp_c": 7.0,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 8.6,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 03:00",
+                        "temp_c": 6.3,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 8.6,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 04:00",
+                        "temp_c": 5.6,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "wind_kph": 8.6,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 05:00",
+                        "temp_c": 5.4,
+                        "condition": {
+                            "text": "Cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png"
+                        },
+                        "wind_kph": 8.3,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 06:00",
+                        "temp_c": 5.6,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png"
+                        },
+                        "wind_kph": 7.2,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 07:00",
+                        "temp_c": 5.0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "wind_kph": 7.9,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 08:00",
+                        "temp_c": 6.6,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "wind_kph": 8.3,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 09:00",
+                        "temp_c": 10.0,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 12.2,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 10:00",
+                        "temp_c": 11.2,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "wind_kph": 13.7,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 11:00",
+                        "temp_c": 12.9,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 14.0,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 12:00",
+                        "temp_c": 13.6,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "wind_kph": 15.8,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 13:00",
+                        "temp_c": 14.0,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "wind_kph": 18.0,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 14:00",
+                        "temp_c": 13.9,
+                        "condition": {
+                            "text": "Partly cloudy",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png"
+                        },
+                        "wind_kph": 17.6,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 15:00",
+                        "temp_c": 13.9,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 16.6,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 16:00",
+                        "temp_c": 13.7,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 14.4,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 17:00",
+                        "temp_c": 9.3,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 11.2,
+                        "wind_dir": "NNE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 18:00",
+                        "temp_c": 8.0,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 7.9,
+                        "wind_dir": "NNE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 19:00",
+                        "temp_c": 8.4,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 3.2,
+                        "wind_dir": "NNE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 20:00",
+                        "temp_c": 6.1,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 1.8,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 21:00",
+                        "temp_c": 5.8,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 1.8,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 22:00",
+                        "temp_c": 5.4,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 3.2,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-20 23:00",
+                        "temp_c": 5.1,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 2.2,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    }
+                ]
+            },
+            {
+                "date": "2023-02-21",
+                "day": {
+                    "maxtemp_c": 18.2,
+                    "mintemp_c": 3.3,
+                    "maxwind_kph": 9.7,
+                    "totalsnow_cm": 0.0,
+                    "avgvis_km": 10.0,
+                    "avghumidity": 56.0,
+                    "daily_chance_of_rain": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Sunny",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                    },
+                    "uv": 3.0
+                },
+                "astro": {
+                    "sunrise": "06:21 AM",
+                    "sunset": "05:13 PM",
+                    "moonrise": "07:18 AM",
+                    "moonset": "06:45 PM",
+                    "moon_phase": "Waxing Crescent",
+                    "moon_illumination": "1",
+                    "is_moon_up": 0,
+                    "is_sun_up": 0
+                },
+                "hour": [
+                    {
+                        "time": "2023-02-21 00:00",
+                        "temp_c": 4.6,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 2.2,
+                        "wind_dir": "NNE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 01:00",
+                        "temp_c": 4.4,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 1.8,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 02:00",
+                        "temp_c": 4.1,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 1.8,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 03:00",
+                        "temp_c": 3.9,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 2.5,
+                        "wind_dir": "NNE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 04:00",
+                        "temp_c": 3.6,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 1.8,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 05:00",
+                        "temp_c": 3.4,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 2.5,
+                        "wind_dir": "NNE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 06:00",
+                        "temp_c": 3.1,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 2.9,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 07:00",
+                        "temp_c": 3.6,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 1.1,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 08:00",
+                        "temp_c": 5.9,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 1.8,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 09:00",
+                        "temp_c": 8.6,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 0.4,
+                        "wind_dir": "SSE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 10:00",
+                        "temp_c": 11.6,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 2.2,
+                        "wind_dir": "S",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 11:00",
+                        "temp_c": 14.1,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 4.3,
+                        "wind_dir": "S",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 12:00",
+                        "temp_c": 15.3,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 3.2,
+                        "wind_dir": "S",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 13:00",
+                        "temp_c": 17.2,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 3.2,
+                        "wind_dir": "SSE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 14:00",
+                        "temp_c": 17.9,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 2.5,
+                        "wind_dir": "SE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 15:00",
+                        "temp_c": 18.2,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 1.8,
+                        "wind_dir": "NE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 16:00",
+                        "temp_c": 17.9,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 3.6,
+                        "wind_dir": "NNE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 17:00",
+                        "temp_c": 13.6,
+                        "condition": {
+                            "text": "Sunny",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png"
+                        },
+                        "wind_kph": 6.8,
+                        "wind_dir": "NNE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 18:00",
+                        "temp_c": 12.3,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 7.2,
+                        "wind_dir": "NNE",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 19:00",
+                        "temp_c": 11.7,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 7.2,
+                        "wind_dir": "N",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 20:00",
+                        "temp_c": 8.9,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 7.9,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 21:00",
+                        "temp_c": 8.3,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 8.6,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 22:00",
+                        "temp_c": 7.8,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 7.9,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    },
+                    {
+                        "time": "2023-02-21 23:00",
+                        "temp_c": 7.4,
+                        "condition": {
+                            "text": "Clear",
+                            "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png"
+                        },
+                        "wind_kph": 8.3,
+                        "wind_dir": "NNW",
+                        "chance_of_rain": 0,
+                        "vis_km": 10.0
+                    }
+                ]
+            }
+        ]
+    },
+    "alerts": {
+        "alert": [
+            {
+                "headline": "National Hydrometeorological Service - Republic of Macedonia",
+                "msgtype": "",
+                "severity": "",
+                "urgency": "",
+                "areas": "",
+                "category": "Wind",
+                "certainty": "",
+                "event": "Wind",
+                "note": "",
+                "effective": "2023-02-05T14:14:00+00:00",
+                "expires": "2023-02-20T19:14:00+00:00",
+                "desc": "strong wind",
+                "instruction": ""
+            }
+        ]
+    }
+}
