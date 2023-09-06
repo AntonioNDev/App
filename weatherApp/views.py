@@ -9,6 +9,7 @@ class cityNameForm(forms.Form):
 
 def fetchData(cityName):
    try:
+      #If you read this don't steal my API key hahahah
       response = requests.get(f"https://api.weatherapi.com/v1/forecast.json?key=d544248570e94c51a67211516211806&q={cityName}&days=3&aqi=yes&alerts=yes")
 
       if response.status_code != 400:
